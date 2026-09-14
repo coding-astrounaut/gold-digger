@@ -1,0 +1,25 @@
+{
+  "name": "gold digger",
+  "version": "1.0.0",
+  "description": "no",
+  "keywords": [
+    "scrimba"
+  ],
+  "homepage": "https://github.com/coding-astrounaut/gold-digger#readme",
+  "bugs": {
+    "url": "https://github.com/coding-astrounaut/gold-digger/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coding-astrounaut/gold-digger.git"
+  },
+  "author": "mehtab",
+  "type": "module",
+  "main": "server.js",
+  "dependencies": {
+    "sanitize-html": "^2.16.0"
+  },
+  "scripts": {
+  "start": "node server.js"
+}
+}
