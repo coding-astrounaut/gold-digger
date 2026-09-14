@@ -5,17 +5,19 @@ import { handlePriceRequest, handleBuyRequest } from './utils/routeHandlers.js'
 const PORT = 8000;
 
 const __dirname = import.meta.dirname;
+let price = 0;
 
 const server = http.createServer(async (req, res) => {
 
     if (req.url === '/api') {
 
         if (req.method === 'GET') {
-            return await handlePriceRequest(res);
+            return price = await handlePriceRequest(res);
         }
 
         else if (req.method === 'POST') {
-            return await handleBuyRequest(req, res);    
+            console.log('Received POST request to /api');
+            return await handleBuyRequest(req, res, price);    
         }
 
     }
